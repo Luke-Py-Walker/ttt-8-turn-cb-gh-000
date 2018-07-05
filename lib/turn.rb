@@ -30,6 +30,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   a = gets.split
+  b = input_to_index(a)
   # while !valid_move(board,index)
   #   turn(board)
   # end
