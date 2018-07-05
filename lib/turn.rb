@@ -1,3 +1,12 @@
+def turn(board)
+  puts "Please enter 1-9:"
+  a = gets.split
+  b = input_to_index(a)
+  # while !valid_move(board,index)
+  #   turn(board)
+  # end
+end
+
 
 # code your #valid_move? method here
 def valid_move?(board,index)
@@ -25,13 +34,4 @@ end
 
 def move(board, index, character = "X")
   board[index] = character
-end
-
-def turn(board)
-  puts "Please enter 1-9:"
-  a = gets.split
-  b = input_to_index(a)
-  # while !valid_move(board,index)
-  #   turn(board)
-  # end
 end
