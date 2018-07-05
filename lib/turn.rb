@@ -33,4 +33,5 @@ def turn(board)
   index = input_to_index(input)
   while !valid_move(board,index)
     turn(board)
+  end
 end
